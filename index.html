@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexA_basics.css">
+    <script>
+        function handler(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'togle_night mod') {
+                target.style.backgroundColor = '#404040';
+                target.style.color = 'white';
+                self.value = 'togle_day mod';
+            }
+            else {
+                target.style.backgroundColor = '#e6e6e6';
+                target.style.color = 'black';
+                self.value = 'togle_night mod';
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color:#e6e6e6">
+
+    <input id="togle" type="button" value="togle_night mod" onclick="
+    handler(this);
+    ">
+    <p>
+        <a href="https://www.google.com/">google</a>
+        <br>
+        <a href="https://www.youtube.com/">youtube</a>
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit cum maiores minima ipsum aspernatur
+        reprehenderit? Possimus nemo itaque sint, odit quasi molestiae architecto dolorem nesciunt dolore provident,
+        dolor, fugit odio?
+    </p>
+</body>
+
+</html>
