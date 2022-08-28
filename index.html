@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-
-</html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexA_basics.css">
+    <style>
+        a {
+            text-decoration-line: none;
+        }
+    </style>
     <script>
+        function setlinkcolor(color){
+            var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = color;
+                    i++;
+        }
+    }
+        function setfontcolor(color){
+            document.querySelector('body').style.color = color;
+        }
+        function setbackcolor(color){
+            document.querySelector('body').style.backgroundColor = color;
+        }
         function handler(self) {
             var target = document.querySelector('body');
             if (self.value === 'togle_night mod') {
-                target.style.backgroundColor = '#404040';
-                target.style.color = 'white';
+                setbackcolor('#404040');
+                setfontcolor('white');
                 self.value = 'togle_day mod';
+
+                setlinkcolor('pink');
+                
             }
             else {
-                target.style.backgroundColor = '#e6e6e6';
-                target.style.color = 'black';
+                setbackcolor('#e6e6e6');
+                setfontcolor('black');
                 self.value = 'togle_night mod';
+
+                setlinkcolor('magenta');
             }
         }
     </script>
@@ -30,9 +52,9 @@
     handler(this);
     ">
     <p>
-        <a href="https://www.google.com/">google</a>
+        <a href="https://www.google.com/" style="color: magenta">google</a>
         <br>
-        <a href="https://www.youtube.com/">youtube</a>
+        <a href="https://www.youtube.com/" style="color: magenta;">youtube</a>
     </p>
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit cum maiores minima ipsum aspernatur
