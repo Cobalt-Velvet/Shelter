@@ -1,8 +1,10 @@
 
 /*컨테이너의 위치*/
 .container {
-	width:1080px;
+	width:auto;
 	margin:0 auto;
+	background-size: auto;
+	background-color: #AECDFF;
 }
 /*헤더의 위치*/
 header {
@@ -11,12 +13,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 }
 header > h1 {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 header > nav {
+	margin-right: 30px;
 	width:600px;
 	height:100%;
 }
