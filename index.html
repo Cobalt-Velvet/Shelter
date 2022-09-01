@@ -14,6 +14,7 @@
     <link href="index_basic.css" rel="stylesheet">
     <link href="index_date.css" rel="stylesheet">
     <script src="date_time.js"></script>
+    <script src="weather.js"></script>
 
 
 </head>
@@ -32,8 +33,19 @@
     </header>
     <div class="MainSentence">
         <h2>Today is :</h2>
-        <div id="time" class="time"></div>
-        <div id="date" class="date"></div>
+        
+        <p id="time" class="time"></p>
+        <p id="date" class="date"></p>
+        
+    </div>
+    <div>
+        <p class="fn-font">
+            도시: <span id="city"></span><br>
+            날씨: <span id="weather"></span><br>
+            기온: <span id="temperature"></span> degree<br>
+            습도: <span id="humidity"></span> %<br>
+            기압: <span id="pressure"></span> hPa
+          </p>
     </div>
 
     </body>
