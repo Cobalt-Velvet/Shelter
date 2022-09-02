@@ -13,6 +13,7 @@
     <link href="index_headermenu.css" rel="stylesheet">
     <link href="index_basic.css" rel="stylesheet">
     <link href="index_date.css" rel="stylesheet">
+    <link href="weather.css" rel="stylesheet">
     <script src="date_time.js"></script>
     <script src="weather.js"></script>
 
@@ -34,18 +35,29 @@
     <div class="MainSentence">
         <h2>Today is :</h2>
         
-        <p id="time" class="time"></p>
-        <p id="date" class="date"></p>
+        <div id="time" class="time"></div>
+        <div id="date" class="date"></div>
         
     </div>
     <div>
-        <p class="fn-font">
+        <div class="weather_section">
+            <div id="weather_left">
+            기온: <span id="temperature"></span> °C<br>
+            체감온도: <span id="feels_like"></span> °C<br>
             도시: <span id="city"></span><br>
+            </div>
+            <div id="weather_center">            
             날씨: <span id="weather"></span><br>
-            기온: <span id="temperature"></span> degree<br>
+            설명: <span id="description"></span><br>
             습도: <span id="humidity"></span> %<br>
-            기압: <span id="pressure"></span> hPa
-          </p>
+            구름양: <span id="clouds"></span> %<br>
+            </div>
+            <div id="weather_right">
+            아이콘: <span id="icon"></span><br>
+            일출: <span id="sunrise"></span><br>
+            일몰: <span id="sunset"></span><br>
+            </div>
+        </div>
     </div>
 
     </body>
