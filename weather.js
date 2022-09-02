@@ -21,4 +21,5 @@ function getWeather() {
 
   window.addEventListener('load', function() {
     getWeather()
+    setInterval(getWeather,500);
 });
