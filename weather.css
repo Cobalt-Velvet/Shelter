@@ -1,10 +1,24 @@
 .weather_section {
     margin-top: 150px;
     margin-left: 100px;
-    background-color: #AD9AEE;
+    background-size: cover;
+    background-image: url("weather_backimg.jpg");
+    display: flex;
+    justify-content: space-between;
 
-    width: 500px;
+    width: 600px;
     height: 250px;
     
 }
 
+#temperature {
+    font-size: 50px;
+}
+
+#weather_center {
+    margin-left: 20px;
+}
+
+#weather_right {
+    margin-left: auto;
+}
