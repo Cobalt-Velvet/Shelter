@@ -11,14 +11,20 @@
     
 }
 
-#temperature {
-    font-size: 50px;
+#weather_left {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
-#weather_center {
-    margin-left: 20px;
+#temperature {
+    font-size: 80px;
 }
 
 #weather_right {
     margin-left: auto;
+    margin-right: 20px;
+    font-size: 40px;
 }
+
+
+

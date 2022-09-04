@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Silkscreen');
+@import url('https://fonts.googleapis.com/css?family=Silkscreen|Nanum+Brush+Script');
 
 * {
 	margin:0;
 	padding:0;
 	color:#000;
-	font-family: 'Silkscreen', cursive;
 	box-sizing: border-box;
 }
 
+#Default-font {
+	font-family: 'Silkscreen', serif;
+}
+
 .fn-font {
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Nanum Brush Script', cursive;
 }
 
 ul {
